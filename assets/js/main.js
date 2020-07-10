@@ -20,9 +20,9 @@ function trinkgeld() {
     let betrag = +price + +tGeld
     let pPerson = betrag / people
     if (percent != 10) {
-        document.getElementById("trinkgeld").innerHTML = `Trinkgeld ist: ${tGeld}`
-        document.getElementById("rechnung").innerHTML = `Gesamtbetrag ist: ${betrag}`
-        document.getElementById("person").innerHTML = `Jeder zahlt: ${pPerson}`
+        document.getElementById("trinkgeld").innerHTML = `Trinkgeld ist: ${tGeld}€`
+        document.getElementById("rechnung").innerHTML = `Gesamtbetrag ist: ${betrag}€`
+        document.getElementById("person").innerHTML = `Jeder zahlt: ${pPerson}€`
     } else {
         document.getElementById("trinkgeld").innerHTML = "Bitte geben Sie die Service-qualität an!"
     }
