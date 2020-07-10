@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinkgeldrechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <article id="rechner">
+            <h1>Trinkgeldrechner</h1>
+            <form action="">
+                <label for="amount">Wie hoch war die Rechnung?</label>
+                <img src="assets/img/iconmonstr-currency-6.svg" alt="">
+                <input type="number" name="amount" id="amount">
+                <label for="people">Wie viele Menschen teilen sich die Rechnung?</label>
+                <img src="assets/img/iconmonstr-user-29.svg" alt="">
+                <input type="number" name="people" id="people">
+                <select name="service" id="service">
+                    <option value="0">Wie war der Service</option>
+                    <option value="1">Schlecht</option>
+                    <option value="2">Okay</option>
+                    <option value="3">Super</option>
+                    <option value="4">Portugiesisch</option>
+                </select>
+                
+                <button onclick="trinkgeld()">Submit</button>
+            </form>
+            <div id="box">
+                <h2 id="trinkgeld"></h2>
+                <h2 id="rechnung"></h2>
+                <h2 id="person"></h2>
+            </div>
+        </article>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
