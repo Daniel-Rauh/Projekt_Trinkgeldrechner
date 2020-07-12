@@ -22,7 +22,7 @@ function trinkgeld() {
     if (percent == 10) {
         document.getElementById("trinkgeld").innerHTML = "Bitte geben Sie die Service-qualität an!"
     } else if (people == 0) {
-        document.getElementById("trinkgeld").innerHTML = "Bitte geben Sie die Anzahl der Personen an an!"
+        document.getElementById("trinkgeld").innerHTML = "Bitte geben Sie die Anzahl der Personen an!"
     } else if (price == 0) {
         document.getElementById("trinkgeld").innerHTML = "Bitte geben Sie die Höhe der Rechnung an!"
     } else {
