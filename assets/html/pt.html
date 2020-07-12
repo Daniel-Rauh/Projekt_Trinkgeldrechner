@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de gorjeta</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <section>
+        <article id="rechner">
+            <h1>Calculadora de gorjeta</h1>
+            <a href="../../index.html">DE</a>
+            <form action="">
+                <label for="amount">Quanto foi a conta?</label>
+                <img src="../img/iconmonstr-currency-6.svg" alt="">
+                <input type="number" name="amount" id="amount">
+                <label for="people">Quantas pessoas dividem a conta?</label>
+                <img src="../img/iconmonstr-user-29.svg" alt="">
+                <input type="number" name="people" id="people">
+                <select name="service" id="service">
+                    <option value="0">Como foi o Serviço?</option>
+                    <option value="1">Mau</option>
+                    <option value="2">Razoável</option>
+                    <option value="3">Bom</option>
+                    <option value="4">Português</option>
+                </select>
+                
+                <button onclick="trinkgeld()">Submeter</button>
+            </form>
+            <div id="box">
+                <h2 id="trinkgeld"></h2>
+                <h2 id="rechnung"></h2>
+                <h2 id="person"></h2>
+            </div>
+        </article>
+    </section>
+
+    <script src="../js/pt.js"></script>
+</body>
+
+</html>

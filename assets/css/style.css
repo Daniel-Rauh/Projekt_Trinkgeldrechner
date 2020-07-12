@@ -9,7 +9,7 @@ article{
     border: 2px solid #333333;
     border-radius: 20px;
     background: pink;
-    padding: 0 20px 150px;
+    padding: 0 20px 200px;
     position: relative;
     transition: padding .5s;
 }
@@ -49,4 +49,14 @@ div{
     height: 0;
     overflow: hidden;
     transition: height .5s;
+}
+#rechner>a{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+#rechner>a:hover{
+    text-decoration: underline;
 }
