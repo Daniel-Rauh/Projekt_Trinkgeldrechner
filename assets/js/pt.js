@@ -20,7 +20,7 @@ function trinkgeld() {
     let betrag = +price + +tGeld
     let pPerson = (betrag / people).toFixed(2)
     if (percent == 10) {
-        document.getElementById("trinkgeld").innerHTML = "Por favor introduza a qualidade do servico!"
+        document.getElementById("trinkgeld").innerHTML = "Por favor introduza a qualidade do serviço!"
     } else if (people == 0) {
         document.getElementById("trinkgeld").innerHTML = "Por favor introduza o número de pessoas!"
     } else if (price == 0) {
