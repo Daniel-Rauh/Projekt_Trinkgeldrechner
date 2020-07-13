@@ -21,10 +21,16 @@ function trinkgeld() {
     let pPerson = (betrag / people).toFixed(2)
     if (percent == 10) {
         document.getElementById("trinkgeld").innerHTML = "Por favor introduza a qualidade do serviço!"
+        document.getElementById("rechnung").innerHTML = ""
+        document.getElementById("person").innerHTML = ""
     } else if (people == 0) {
         document.getElementById("trinkgeld").innerHTML = "Por favor introduza o número de pessoas!"
+        document.getElementById("rechnung").innerHTML = ""
+        document.getElementById("person").innerHTML = ""
     } else if (price == 0) {
         document.getElementById("trinkgeld").innerHTML = "Por favor introduza o montante da conta!"
+        document.getElementById("rechnung").innerHTML = ""
+        document.getElementById("person").innerHTML = ""
     } else {
         document.getElementById("trinkgeld").innerHTML = `A gorgeta é: ${tGeld}€`
         document.getElementById("rechnung").innerHTML = `O total é: ${betrag}€`

@@ -21,10 +21,16 @@ function trinkgeld() {
     let pPerson = (betrag / people).toFixed(2)
     if (percent == 10) {
         document.getElementById("trinkgeld").innerHTML = "Bitte geben Sie die Service-qualität an!"
+        document.getElementById("rechnung").innerHTML = ""
+        document.getElementById("person").innerHTML = ""
     } else if (people == 0) {
         document.getElementById("trinkgeld").innerHTML = "Bitte geben Sie die Anzahl der Personen an!"
+        document.getElementById("rechnung").innerHTML = ""
+        document.getElementById("person").innerHTML = ""
     } else if (price == 0) {
         document.getElementById("trinkgeld").innerHTML = "Bitte geben Sie die Höhe der Rechnung an!"
+        document.getElementById("rechnung").innerHTML = ""
+        document.getElementById("person").innerHTML = ""
     } else {
         document.getElementById("trinkgeld").innerHTML = `Trinkgeld ist: ${tGeld}€`
         document.getElementById("rechnung").innerHTML = `Gesamtbetrag ist: ${betrag}€`
